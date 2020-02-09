@@ -9,18 +9,17 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      name: jenkins
+      name: jenkins-pod
       app: jenkins-deployment
   template:
     metadata:
-      name: jenkins
+      name: jenkins-pod
       labels:
-        name: jenkins
+        name: jenkins-pod
         app: jenkins-deployment
     spec:
       containers:
         - name: jenkins
           image: jenkins
           ports:
-           - port: 8080
-             targetPort: 8080
+           - containerPort: 8080
