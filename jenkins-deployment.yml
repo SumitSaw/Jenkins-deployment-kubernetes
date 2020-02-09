@@ -4,7 +4,7 @@ metadata:
 	name: jenkins
 	labels:
 		name: jenkins
-		app: jenkins
+		app: jenkins-deployment
 
 spec:
 	replicas: 1
@@ -18,7 +18,7 @@ spec:
 			name: jenkins
 			labels:
 				name: jenkins
-				app: jenkins
+				app: jenkins-deployment
 
 		spec:
 			containers:
