@@ -10,4 +10,7 @@ spec:
   ports:
     port: 8080
     targetPorts: 8080
+  selector:
+    name: jenkins
+    app: jenkins-deployment
     
